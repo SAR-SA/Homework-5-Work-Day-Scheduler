@@ -1,23 +1,24 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    const todayDate = moment ();
+    const todayDate = moment();
     const currentDayElement = $('#currentDay');
-    
+
     //Container that holds the calendar
     const container = $('div.container');
-    
+
     //Header Date - using moment.js
     currentDayElement.text(todayDate.format('dddd, MMMM DD YYYY'));
-    
+
     
     for (let i = 9; i < 18; i++) {
-    
+        
         const rowEl = $('<div>');
         const hourEl = $('<div>');
         const calTextArea = $('<textarea>');
         const saveBtn = $('<button>');
-        const currentHour = moment ().hour();
-    
+        const currentHour = moment().hour();
+        const storageInput = document.querySelector('.storage')
+        
         rowEl.addClass('row time-block');
         hourEl.addClass('col-1 hour');
         hourEl.text(i + "AM");
@@ -26,12 +27,19 @@ $(document).ready(function() {
         saveBtn.addClass('col-1 saveBtn');
         saveBtn.attr('type', 'button');
         saveBtn.html('<i class="far fa-save"></i>');
-    
+        
         container.append(rowEl);
         rowEl.append(hourEl, calTextArea, saveBtn);
         
-        if ( i > 12) {
-            hourEl.text (i - 12 + "PM");
+        function addToDos() {
+            storageInput.addEventListener('text', letter => {
+                console.log(letter.target.value)
+                text.textContent = letter.target.value
+            })
+        }
+
+        if (i > 12) {
+            hourEl.text(i - 12 + "PM");
         }
 
         if (i < currentHour) {
@@ -46,16 +54,31 @@ $(document).ready(function() {
             calTextArea.addClass('present')
         }
     }
-
+    savebutton();
+    addToDos();
 });
 
-const button = document.querySelector('.saveBtn')
+// const input = document.querySelector('input')
 
-var todo = '.storage'
+// form.addEventListener('submit', logSubmit)
 
-function storeTodo(){
-    console.log(storeTodo)
-localStorage.setItem('text', todo)
+// //Function to add To Do's
+// function logSubmit(event) {
+//     event.preventDefault();
+//   }
+
+
+
+//Function to save To Do's
+function savebutton() {
+    const button = document.querySelector('.saveBtn');
+    button.addEventListener('click', storeTodo);
 }
 
-button.addEventListener('click', storeTodo)
+
+var todo = 'textarea'
+
+function storeTodo() {
+    localStorage.setItem('text', todo)
+}
+
