@@ -47,12 +47,14 @@ $(document).ready(function () {
         hourEl.text(i + "AM");
         calTextArea.addClass('col-10 storage');
 
-        // if i < 12
+         if (i < 12) {
         calTextArea.text(localStorage.getItem(i + "AM"));
-        // else  if i == 12
-        // calTextArea.text(localStorage.getItem((i  + "PM"))
-        // else 
-        // calTextArea.text(localStorage.getItem((i - 12) + "PM"))
+         }
+
+         if (i > 11) {
+            calTextArea.text(localStorage.getItem((i - 12) + "PM"));
+         }
+        
         
         calTextArea.attr('input');
         saveBtn.addClass('col-1 saveBtn');
@@ -69,7 +71,11 @@ $(document).ready(function () {
             })
         }
 
-        if (i > 11) {
+        if (i === 12) {
+            hourEl.text(i + "PM");
+        }
+
+        if (i > 12) {
             hourEl.text(i - 12 + "PM");
         }
 
