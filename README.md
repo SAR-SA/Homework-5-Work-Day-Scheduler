@@ -14,4 +14,4 @@ Technologies used
 -Moment.js
 
 https://sar-sa.github.io/Homework-5-Work-Day-Scheduler/
-By Shawn A. Rather sarsa.web@gmail.com 
+By Shawn A. Rather sarsa.web@gmail.com / https://github.com/SAR-SA
