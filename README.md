@@ -19,6 +19,8 @@ Technologies used:
 
 -Moment.js
 
+-Font Awesome
+
 Deployed Link: https://sar-sa.github.io/Homework-5-Work-Day-Scheduler/
 
 By Shawn A. Rather sarsa.web@gmail.com / https://github.com/SAR-SA
