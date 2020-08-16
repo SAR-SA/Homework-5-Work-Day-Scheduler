@@ -8,6 +8,7 @@ The current hour will be red, the past hours(s) will be gray, the future hour(s)
 You can type in any meeting, event, or "ToDo's" in the respective hour and hit the save button to save.
 
 Technologies used:
+
 -HTML  
 
 -CSS  
@@ -16,5 +17,6 @@ Technologies used:
 
 -Moment.js
 
-https://sar-sa.github.io/Homework-5-Work-Day-Scheduler/
+Deployed Link: https://sar-sa.github.io/Homework-5-Work-Day-Scheduler/
+
 By Shawn A. Rather sarsa.web@gmail.com / https://github.com/SAR-SA
