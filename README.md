@@ -1,5 +1,7 @@
 # Homework-5-Work-Day-Scheduler
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![](images/WorkDayScheduler%20Readme.JPG)
 
 This is a workday Scheduler
