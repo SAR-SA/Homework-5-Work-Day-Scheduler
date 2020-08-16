@@ -7,7 +7,7 @@ Based on a 9-5 day
 The current hour will be red, the past hours(s) will be gray, the future hour(s) will be green.
 You can type in any meeting, event, or "ToDo's" in the respective hour and hit the save button to save.
 
-Technologies used
+Technologies used:
 HTML, CSS, Javascript, Moment.js
 
 https://sar-sa.github.io/Homework-5-Work-Day-Scheduler/
